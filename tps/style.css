@@ -50,20 +50,20 @@ body {
 }
 
 .image__red {
-  background-image: url("/~tbergg/assets/images/bg-red.jpg");
   background-image: url("/assets/images/bg-red.jpg");
+  background-image: url("/~tbergg/assets/images/bg-red.jpg");
   background-size: cover;
 }
 
 .image__green {
-  background-image: url("/~tbergg/assets/images/bg-green.jpg");
   background-image: url("/assets/images/bg-green.jpg");
+  background-image: url("/~tbergg/assets/images/bg-green.jpg");
   background-size: cover;
 }
 
 .image__blue {
-  background-image: url("/~tbergg/assets/images/bg-blue.jpg");
   background-image: url("/assets/images/bg-blue.jpg");
+  background-image: url("/~tbergg/assets/images/bg-blue.jpg");
   background-size: cover;
 }
 
@@ -95,4 +95,16 @@ nav ul {
 .navigation__link:active,
 .navigation__link:hover {
   opacity: 100% !important;
+}
+
+.red .navigation__link.active {
+  color: #d4554e;
+}
+
+.blue .navigation__link.active {
+  color: #1e4973;
+}
+
+.green .navigation__link.active {
+  color: #01621f;
 }
