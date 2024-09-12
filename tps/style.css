@@ -1,0 +1,98 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.red {
+  background-color: #d4554e;
+}
+
+.blue {
+  background-color: #1e4973;
+}
+
+.green {
+  background-color: #01621f;
+}
+
+.image-container {
+  width: 100%;
+  /* height: 100%; */
+  flex: 1 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 35vw;
+  aspect-ratio: 1 / 1;
+  outline: 16px solid transparent;
+  transition: all 0.2s;
+}
+
+.image:hover {
+  scale: 1.05;
+  outline-offset: 8px;
+}
+
+.red .image:hover {
+  outline: 16px solid #340807;
+}
+
+.blue .image:hover {
+  outline: 16px solid #5084b2;
+}
+
+.green .image:hover {
+  outline: 16px solid #002007;
+}
+
+.image__red {
+  background-image: url("/~tbergg/assets/images/bg-red.jpg");
+  background-image: url("/assets/images/bg-red.jpg");
+  background-size: cover;
+}
+
+.image__green {
+  background-image: url("/~tbergg/assets/images/bg-green.jpg");
+  background-image: url("/assets/images/bg-green.jpg");
+  background-size: cover;
+}
+
+.image__blue {
+  background-image: url("/~tbergg/assets/images/bg-blue.jpg");
+  background-image: url("/assets/images/bg-blue.jpg");
+  background-size: cover;
+}
+
+.navigation {
+  background-color: #f1f5f9;
+  padding: 16px 0;
+}
+
+.navigation:hover .navigation__link {
+  opacity: 50%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.navigation__link:link,
+.navigation__link:visited {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #1e293b;
+  transition: all 0.2s;
+}
+
+.navigation__link:active,
+.navigation__link:hover {
+  opacity: 100% !important;
+}

@@ -1,62 +1,8 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-body {
-  box-sizing: border-box;
-  min-height: 100vh;
-  overflow-x: hidden;
-  background-color: #fff;
-  font-family: "Inter", sans-serif;
-  color: #1e293b;
-  line-height: 1.5;
-}
-
 section {
   padding: 64px 32px;
   display: flex;
   flex-direction: column;
   gap: 48px;
-}
-
-h1 {
-  line-height: 1.15;
-  font-size: 32px;
-}
-
-h2 {
-  line-height: 1.15;
-  font-size: 24px;
-  text-transform: capitalize;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.link-button:link,
-.link-button:visited {
-  display: inline-block;
-  text-decoration: none;
-  color: #f1f5f9;
-  font-weight: 600;
-  padding: 8px 12px;
-
-  background-image: linear-gradient(to left, #4f46e5 50%, #4338ca 50%);
-  background-size: 200%;
-  background-position: 100%;
-  transition: all 0.2s;
-}
-
-.link-button:hover,
-.link-button:active {
-  background-position: 0%;
 }
 
 /* Personal projects */
@@ -91,11 +37,6 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
-}
-
-.class-project {
-  background-color: #fff;
-  padding: 12px;
 }
 
 /* shared styles */
