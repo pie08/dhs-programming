@@ -10,6 +10,114 @@
     <title>Simple Form</title>
   </head>
   <body>
-    <h1>Hello world</h1>
+    <form>
+      <div class="form__group">
+        <label for="firstName">First name</label>
+        <input
+          type="text"
+          class="input--text"
+          id="firstName"
+          name="firstName"
+          placeholder="John"
+        />
+      </div>
+
+      <div class="form__group">
+        <label for="lastName">Last name</label>
+        <input
+          type="text"
+          class="input--text"
+          id="lastName"
+          name="lastname"
+          placeholder="Doe"
+        />
+      </div>
+
+      <div class="form__group">
+        <label for="password">Password</label>
+        <input
+          type="text"
+          class="input--text"
+          id="password"
+          name="password"
+          placeholder="Password"
+        />
+      </div>
+
+      <div class="form__group">
+        <label for="email">Email</label>
+        <input
+          type="text"
+          class="input--text"
+          id="email"
+          name="email"
+          placeholder="example@email.com"
+        />
+      </div>
+
+      <div class="form__group">
+        <label for="car">Car</label>
+        <select name="car" id="car">
+          <option value="volvo">Volvo</option>
+          <option value="ford">Ford</option>
+          <option value="audi">Audi</option>
+          <option value="vw">Volkswagen</option>
+        </select>
+      </div>
+
+      <div class="form__group">
+        <div class="form__radio-group">
+          <input type="radio" class="input--radio" id="freshman" name="grade" />
+          <label for="freshman">Freshman</label>
+        </div>
+
+        <div class="form__radio-group">
+          <input type="radio" class="input--radio" id="sophmore" name="grade" />
+          <label for="sophmore">Sophmore</label>
+        </div>
+
+        <div class="form__radio-group">
+          <input type="radio" class="input--radio" id="junior" name="grade" />
+          <label for="junior">Junior</label>
+        </div>
+
+        <div class="form__radio-group">
+          <input type="radio" class="input--radio" id="senior" name="grade" />
+          <label for="senior">Freshman</label>
+        </div>
+      </div>
+
+      <div class="form__group">
+        <div class="form__checkbox-group">
+          <input
+            type="checkbox"
+            class="input--check"
+            id="bike"
+            name="transportation"
+          />
+          <label for="bike">I have a bike</label>
+        </div>
+
+        <div class="form__checkbox-group">
+          <input
+            type="checkbox"
+            class="input--check"
+            id="car"
+            name="transportation"
+          />
+          <label for="car">I have a car</label>
+        </div>
+      </div>
+
+      <div class="form__group">
+        <label for="comments">Comments</label>
+        <textarea name="comments" id="comments"></textarea>
+      </div>
+
+      <div class="form__button-group">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
   </body>
 </html>

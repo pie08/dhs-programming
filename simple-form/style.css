@@ -17,3 +17,62 @@ h3,
 h4 {
   line-height: 1.15;
 }
+
+/* form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  padding: 24px;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+.form__radio-group {
+}
+
+.form__checkbox-group {
+}
+
+.form__button-group {
+}
+
+label {
+  line-height: 1;
+}
+
+/* inputs */
+.input--text {
+  max-width: 250px;
+
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+select {
+}
+
+.input--radio {
+}
+
+.input--check {
+}
+
+textarea {
+  max-width: 500px;
+  height: 96px;
+}
+
+select {
+  max-width: 250px;
+}
+
+button {
+}
