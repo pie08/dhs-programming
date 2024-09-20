@@ -6,11 +6,12 @@
 
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
 
     <title>Simple Form</title>
   </head>
   <body>
-    <form>
+    <form action="" method="POST">
       <div class="form__group">
         <label for="firstName">First name</label>
         <input
@@ -19,6 +20,7 @@
           id="firstName"
           name="firstName"
           placeholder="John"
+          required
         />
       </div>
 
@@ -30,28 +32,31 @@
           id="lastName"
           name="lastname"
           placeholder="Doe"
+          required
         />
       </div>
 
       <div class="form__group">
         <label for="password">Password</label>
         <input
-          type="text"
+          type="password"
           class="input--text"
           id="password"
           name="password"
           placeholder="Password"
+          required
         />
       </div>
 
       <div class="form__group">
         <label for="email">Email</label>
         <input
-          type="text"
+          type="email"
           class="input--text"
           id="email"
           name="email"
           placeholder="example@email.com"
+          required
         />
       </div>
 
@@ -65,29 +70,53 @@
         </select>
       </div>
 
-      <div class="form__group">
+      <div class="form__group form__group--radio">
         <div class="form__radio-group">
-          <input type="radio" class="input--radio" id="freshman" name="grade" />
+          <input
+            type="radio"
+            class="input--radio"
+            id="freshman"
+            name="grade"
+            value="freshman"
+          />
           <label for="freshman">Freshman</label>
         </div>
 
         <div class="form__radio-group">
-          <input type="radio" class="input--radio" id="sophmore" name="grade" />
+          <input
+            type="radio"
+            class="input--radio"
+            id="sophmore"
+            name="grade"
+            value="sophmore"
+          />
           <label for="sophmore">Sophmore</label>
         </div>
 
         <div class="form__radio-group">
-          <input type="radio" class="input--radio" id="junior" name="grade" />
+          <input
+            type="radio"
+            class="input--radio"
+            id="junior"
+            name="grade"
+            value="junior"
+          />
           <label for="junior">Junior</label>
         </div>
 
         <div class="form__radio-group">
-          <input type="radio" class="input--radio" id="senior" name="grade" />
+          <input
+            type="radio"
+            class="input--radio"
+            id="senior"
+            name="grade"
+            value="senior"
+          />
           <label for="senior">Freshman</label>
         </div>
       </div>
 
-      <div class="form__group">
+      <div class="form__group form__group--checkbox">
         <div class="form__checkbox-group">
           <input
             type="checkbox"
@@ -111,12 +140,17 @@
 
       <div class="form__group">
         <label for="comments">Comments</label>
-        <textarea name="comments" id="comments"></textarea>
+        <textarea
+          name="comments"
+          id="comments"
+          placeholder="Your comments..."
+          required
+        ></textarea>
       </div>
 
       <div class="form__button-group">
-        <button type="reset">Reset</button>
-        <button type="submit">Submit</button>
+        <button class="button button--cta" type="submit">Submit</button>
+        <button class="button button--gray" type="reset">Reset</button>
       </div>
     </form>
   </body>
