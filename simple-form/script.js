@@ -20,4 +20,6 @@ form.addEventListener("submit", (e) => {
     }\n
     You drive a ${formData.car}\n
     You said ${formData.comments}`);
+
+  e.target.reset();
 });
