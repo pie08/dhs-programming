@@ -2,6 +2,8 @@ const form = document.querySelector("form");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+
+  // get form data
   const formData = Object.fromEntries(new FormData(form).entries());
 
   // add transportation data if it exists
@@ -9,6 +11,7 @@ form.addEventListener("submit", (e) => {
     formData.transportation = new FormData(form).getAll("transportation");
   }
 
+  // log
   console.log(formData);
   console.log(`You are ${formData.firstName} ${formData.lastName}\n
     Your email is ${formData.email}\n
@@ -21,5 +24,6 @@ form.addEventListener("submit", (e) => {
     You drive a ${formData.car}\n
     You said ${formData.comments}`);
 
+  // reset form values
   e.target.reset();
 });
