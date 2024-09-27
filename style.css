@@ -36,7 +36,8 @@ section {
 .class-projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 /* shared styles */
