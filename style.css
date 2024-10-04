@@ -40,6 +40,16 @@ section {
   row-gap: 48px;
 }
 
+.class-project {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.class-project a {
+  margin-top: auto;
+}
+
 /* shared styles */
 
 .project__text h2,
