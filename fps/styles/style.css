@@ -100,19 +100,8 @@ main {
   padding: 3.2rem;
 }
 
-.home__text-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-
-.home__img {
-  max-width: 40rem;
-  float: right;
-  shape-outside: circle(60% at 50% 50%);
-}
-
 .container {
+  width: 100%;
   max-width: 100rem;
   margin: 0 auto;
 }
