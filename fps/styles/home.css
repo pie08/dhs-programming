@@ -1,0 +1,11 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+.home__img {
+  max-width: 40rem;
+  float: right;
+  shape-outside: circle(60% at 50% 50%);
+}
