@@ -24,12 +24,6 @@
   }
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-  gap: 4.8rem;
-}
-
 .about__about-me {
   display: grid;
   grid-template-columns: 1fr 1fr;
