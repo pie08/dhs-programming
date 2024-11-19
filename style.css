@@ -1,8 +1,66 @@
+/* Navigation */
+.header {
+  height: 64px;
+  width: 100vw;
+  position: fixed;
+  background-color: rgba(241, 245, 249, 0.95);
+  padding: 16px 32px;
+
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+}
+
+.navigation__list {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.navigation__list li {
+  position: relative;
+}
+
+.navigation__list li a {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Dropdown */
+.dropdown-wrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding-top: 8px;
+}
+
+.dropdown {
+  background-color: #f1f5f9;
+  border-top: 2px solid #4f46e5;
+  padding: 12px;
+  min-width: max-content;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dropdown__list li a {
+}
+
+/* ----- */
 section {
   padding: 64px 32px;
   display: flex;
   flex-direction: column;
   gap: 48px;
+}
+
+section:nth-of-type(1) {
+  padding-top: calc(64px + 64px);
 }
 
 /* Personal projects */
