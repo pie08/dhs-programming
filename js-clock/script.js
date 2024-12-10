@@ -22,11 +22,15 @@ function clock() {
   const milliseconds = date.getMilliseconds();
   let period = hours >= 12 ? "PM" : "AM";
 
-  const timeString = `${
-    hours > 12 ? (hours % 13) + 1 : hours
-  }:${minutes}:${seconds}:${padLeft(String(milliseconds), "0", 3)}`;
-
-  console.log(padLeft(String(milliseconds), "0", 3));
+  const timeString = `${hours > 12 ? hours - 12 : hours}:${padLeft(
+    String(minutes),
+    "0",
+    2
+  )}:${padLeft(String(seconds), "0", 2)}:${padLeft(
+    String(milliseconds),
+    "0",
+    3
+  )}`;
 
   timeElement.textContent = timeString;
   periodElement.textContent = period;
